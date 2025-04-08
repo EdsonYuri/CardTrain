@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashCards</title>
+    <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/vendor/reset.css">
+    <link rel="stylesheet" href="./src/styles/layouts/app-layout.css">
+    <link rel="stylesheet" href="./src/styles/components/header.css">
+    <link rel="stylesheet" href="./src/styles/components/menu.css">
+    <link rel="stylesheet" href="./src/styles/components/main.css">
+    <link rel="stylesheet" href="./src/styles/components/collectionItem.css">
 </head>
+ 
 <body>
-    <div>
+    <div style="display: none;">
         <h2>Adicionar coleção</h2>
         <form action="" id="addCollectionForm">
             <label for="title">Titulo</label>
@@ -20,8 +28,51 @@
 
             <input type="submit" value="Criar coleção">
         </form>
-    </div> 
+    </div>
 
-    <script src="./src/scripts/main.js" type="module"></script>
+    <div class="app-layout">
+        <menu>
+            <div class="menu_logo-menu_area center">
+                <span class="menu_menuIcon">☰</span>
+                <div class="menu_">LOGO</div>
+            </div>
+
+            <a href="">
+                <div class="menu_itemMenu">
+                    <img src="./src/assets/menu/home.svg" alt="">
+                    <span>Página inicial</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="menu_itemMenu">
+                    <img src="./src/assets/menu/world.svg" alt="">
+                    <span>Coleções publicas</span>
+                </div>
+            </a>
+
+        </menu>
+
+        <div class="main-area">
+            <header class="space-between">
+                <div class="header_area_inputSearch center">
+                    <div class="header_area_input_image center">
+                        <img src="./src/assets/header/lupa.png" alt="">
+                    </div>
+                    <input type="search" class="header_inputSearch" placeholder="Pesquisar cartões...">
+                </div>
+                <div class="header_user space-between">
+                    <div class="header_user_image"></div>
+                    <span class="header_user_name">Edson</span>
+                </div>
+            </header>
+            <main>
+                <div class="main_collectionItem center">+</div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./src/scripts/index.js" type="module"></script>
 </body>
+
 </html>

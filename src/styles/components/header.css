@@ -1,0 +1,35 @@
+header {
+    background-color: #212121;
+    padding: 8px 10px;
+}
+
+.header_user {
+    gap: 8px;
+}
+
+.header_user_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #00F0FF;
+}
+
+.header_area_inputSearch{
+    width: 50%;
+}
+
+.header_inputSearch {
+    width: 100%;
+    height: 30px;
+    padding: 15px 3px;
+    border-radius:  0 10px 10px 0;
+    background-color: #343434;
+}
+
+.header_area_input_image{
+    width: 32px;
+    height: 30px;
+    background-color: #343434;
+    padding: 5px;
+    border-radius:  10px 0 0 10px;
+}
