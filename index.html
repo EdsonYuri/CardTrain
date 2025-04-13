@@ -12,24 +12,10 @@
     <link rel="stylesheet" href="./src/styles/components/menu.css">
     <link rel="stylesheet" href="./src/styles/components/main.css">
     <link rel="stylesheet" href="./src/styles/components/collectionItem.css">
+    <link rel="stylesheet" href="./src/styles/layouts/modal-layout.css">
 </head>
- 
+
 <body>
-    <div style="display: none;">
-        <h2>Adicionar coleção</h2>
-        <form action="" id="addCollectionForm">
-            <label for="title">Titulo</label>
-            <input type="text" name="title" id="title" placeholder="estrutura de dados"> <br />
-
-            <label for="description">Descrição</label>
-            <input type="text" name="description" id="description" placeholder="definições arrays, objetos, listas...">
-
-            <br />
-
-            <input type="submit" value="Criar coleção">
-        </form>
-    </div>
-
     <div class="app-layout">
         <menu>
             <div class="menu_logo-menu_area center">
@@ -67,10 +53,30 @@
                 </div>
             </header>
             <main>
-                <div class="main_collectionItem center">+</div>
+                <button class="main_collectionItem center toggle-addCollectionModal">+</button>
             </main>
         </div>
     </div>
+
+    <dialog id="addCollectionModal" open>
+        <div class="modal_header space-between">
+            <h1>Criar uma nova coleção</h1>
+            <button class="toggle-addCollectionModal">X</button>
+        </div>
+
+        <form action="" id="addCollectionForm" class="flexCollumn space-between modal_content">
+            <div class="modal_content__collectionInputs">
+                <input type="text" id="title" placeholder="Digite o titulo da sessão">
+                <input type="text" id="description" placeholder="Adicione uma descrição">
+            </div>
+
+            <div class="modal_content__actionButtons">
+                <input type="submit" value="Criar coleção">
+                <button>Cancelar</button>
+            </div>
+        </form>
+
+    </dialog>
 
     <script src="./src/scripts/index.js" type="module"></script>
 </body>

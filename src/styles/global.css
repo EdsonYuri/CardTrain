@@ -1,8 +1,12 @@
+*{
+    color: white;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
     background-color: #191919;
-    color: white;
+    position: relative;
 }
 
 .center {
@@ -23,6 +27,15 @@ body {
     align-items: center;
 }
 
+.flexCollumn{
+    display: flex;
+    flex-direction: column;
+}
+
 img{
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
