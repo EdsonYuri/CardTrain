@@ -58,21 +58,46 @@
         </div>
     </div>
 
-    <dialog id="addCollectionModal" open>
+    <dialog id="addCollectionModal">
         <div class="modal_header space-between">
             <h1>Criar uma nova coleção</h1>
             <button class="toggle-addCollectionModal">X</button>
         </div>
 
         <form action="" id="addCollectionForm" class="flexCollumn space-between modal_content">
-            <div class="modal_content__collectionInputs">
-                <input type="text" id="title" placeholder="Digite o titulo da sessão">
-                <input type="text" id="description" placeholder="Adicione uma descrição">
+            <div class="modal_content__input_area">
+                <div class="input_area__addCollection">
+                    <input type="text" id="title" placeholder="Digite o titulo da coleção" required>
+                    <input type="text" id="description" placeholder="Adicione uma descrição" required>
+                </div>
+
+                <div class="input_area__addCards flexCollumn">
+                    <div class="addCards__addCardsInput flexCollumn">
+                        <span>1</span>
+                        <input type="text" placeholder="Digite a pergunta">
+                        <input type="text" placeholder="Digite a resposta">
+                    </div>
+
+                    <div class="addCards__addCardsInput flexCollumn">
+                        <span>2</span>
+                        <input type="text" placeholder="Digite a pergunta" >
+                        <input type="text" placeholder="Digite a resposta">
+                    </div>
+<!-- 
+                    <div class="addCards__addCardsInput flexCollumn">
+                        <span>3</span>
+                        <input type="text" placeholder="Digite a pergunta">
+                        <input type="text" placeholder="Digite a resposta">
+                    </div> -->
+
+                    <!-- <button id="createNewCard">Criar novo cartão</button> -->
+                </div>
+
             </div>
 
             <div class="modal_content__actionButtons">
                 <input type="submit" value="Criar coleção">
-                <button>Cancelar</button>
+                <button class="toggle-addCollectionModal">Cancelar</button>
             </div>
         </form>
 

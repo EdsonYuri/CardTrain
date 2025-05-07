@@ -27,7 +27,7 @@ dialog {
     gap: 10px;
 }
 
-.modal_content__collectionInputs input {
+.input_area__addCollection input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -47,4 +47,31 @@ dialog {
     padding: 8px;
     border-radius: 40px;
     background-color: #b3b3b3;
+}
+
+.addCards__addCardsInput{
+    background-color: #575757;
+    /* height: 80px; */
+    /* display: flex; */
+    /* gap: 10px; */
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;    
+}
+
+.addCards__addCardsInput input {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 10px 10px 3px 10px;
+}
+
+.addCards__addCardsInput span {
+    font-weight: 700;
+}
+
+.input_area__addCards{
+    gap: 17px;
+    height: 280px;
+    margin-top: 15px;
+    overflow-y: auto;
 }
